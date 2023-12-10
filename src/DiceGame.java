@@ -8,13 +8,6 @@ import java.util.Scanner;
 public class DiceGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        File file = new File("output.txt");
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-
         System.out.println("Please input the number of sides for the dice.");
         int sidesInput = sc.nextInt();
         System.out.println("Please input the number of players.");
